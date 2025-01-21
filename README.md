@@ -4,7 +4,7 @@
 
 ## 前提条件
 
-- **脚本**：您需要准备好两个推流脚本 (`one.sh` 和 `two.sh`)。
+- **脚本**：您需要准备好两个推流脚本 (`one.sh` 和 `two.sh`)和两个systemd服务文件（`livenvr.service` 和 `start.service`）。
 - **权限**：确保您拥有 `sudo` 权限，以便能够创建和启用系统服务。
 
 ---
