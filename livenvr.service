@@ -1,0 +1,12 @@
+[Unit]
+Description=LiveNVR Program
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/home/pc/LiveNVR-linux-6.5.1-25011015/livenvr
+Restart=on-failure
+User=root
+
+[Install]
+WantedBy=multi-user.target

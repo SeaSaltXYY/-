@@ -1,0 +1,16 @@
+[Unit]
+Description=Start Camera Stream Scripts
+After=livenvr.service
+Requires=livenvr.service
+
+[Service]
+Type=simple
+ExecStart=/home/pc/one.sh
+ExecStartPost=/home/pc/two.sh
+Restart=on-failure
+RestartSec=5
+User=root
+TimeoutStartSec=infinity
+
+[Install]
+WantedBy=multi-user.target
